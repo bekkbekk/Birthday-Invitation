@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caramel&family=Recursive:wght@300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Recursive', sans-serif;
+        }
+
+        input,
+        button {
+            background: none;
+            appearance: none;
+            outline: none;
+            border: none;
+        }
+
+        .title {
+            font-size: 42px;
+            font-weight: 600;
+            text-align: center;
+            /* margin: 32px 0; */
+            margin-bottom: 20px;
+            font-family: 'Caramel', cursive;
+            letter-spacing: 15px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        #home {
+            min-height: 100vh;
+            background-image: url(https://i.ibb.co/kgfkbT2/pink-bg.png);
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #home .container {
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 80%;
+            max-width: 650px;
+            min-height: 300px;
+            border: 12px solid #fff;
+            /* border-radius: 10px; */
+            padding: 25px;
+            text-align: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #home .container .inner-container .event-title {
+            font-size: 40px;
+            font-weight: 800;
+            font-family: 'Caramel', cursive;
+            color: #a3828b;
+            letter-spacing: 15px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        #home .container .inner-container .subtitle {
+            font-size: 16px;
+            font-weight: 300;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        #home .container .inner-container button {
+            width: 50%;
+            max-width: 100px;
+            background-color: transparent;
+            padding: 10px 20px;
+            border: 2px solid #a3828b;
+            ;
+            color: #a3828b;
+            ;
+            border-radius: 10px;
+            cursor: pointer;
+
+            transition: 0.4s ease;
+        }
+
+        #home .container .inner-container button:hover {
+            background-color: #a3828b;
+            ;
+            color: #fff;
+        }
+
+        #details {
+            background-color: #f4f4f6;
+            color: #5C4739;
+        }
+
+        #details .container {
+            width: 85%;
+            max-width: 850px;
+            margin: 0 auto;
+            /* display: flex; */
+        }
+
+        #details .container .pic-container {
+            width: 280px;
+            height: 280px;
+            border: 10px solid #fff;
+            box-shadow: 0 0 20px #555;
+            background-image: url(https://i.ibb.co/xq3HGPj/balloons.png);
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            margin-bottom: 35px;
+        }
+
+        #details .container .details-container .first-detail {
+            text-indent: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        #details .container .details-container .third-detail {
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        #details .container .details-container .third-detail .container {
+            min-width: 200px;
+            max-width: 250px;
+            width: 30%;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #details .container .details-container .third-detail .container .title-detail {
+            font-family: 'Caramel', cursive;
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: 5px;
+        }
+
+        #rsvp .title {
+            color: #6C6482;
+        }
+
+        #rsvp .form-element {
+            display: block;
+            margin: 12px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 650px;
+            border-radius: 10px;
+            border: 2px solid #6C6482;
+        }
+
+        #rsvp .btn-submit {
+            background-color: #6C6482;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="home">
+        <div class="container">
+            <div class="inner-container">
+                <div class="event-title">
+                    Bekk turns 20
+                </div>
+
+                <div class="subtitle">
+                    Join us as in celebrating Bekk's 20<sup>th</sup> birthday this coming December 26, 2022 at Manila,
+                    Philippines.
+                </div>
+
+                <a href="#rsvp"><button class="rsvp-btn">RSVP</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="container">
+            <div class="pic-container"></div>
+            <div class="details-container">
+                <div class="first-detail">
+                    This coming 26<sup>th</sup> of December 2022, Bekk will be celebrating his 20<sup>th</sup> year.
+                </div>
+                <div class="second-detail">
+                    Dear friends and family,
+                    <br><br>
+                    I am excited to invite you to celebrate my birthday with me! Please join me for an evening of fun
+                    and festivities on December 26, 2022 at 8:00pm at Manila, Philippines.
+                    <br><br>
+                    I can't wait to celebrate with all of you and make some unforgettable memories. Please <a href="#rsvp">RSVP</a> by
+                    December 25, 2022 so we can get an accurate headcount.
+                    <br><br>
+                    Looking forward to seeing you there!
+                </div>
+
+                <div class="third-detail">
+                    <div class="container">
+                        <div class="title-detail">WHERE</div>
+                        <div class="info">Manila, Philippines</div>
+                    </div>
+
+                    <div class="container">
+                        <div class="title-detail">WHEN</div>
+                        <div class="info">8:00pm | December 26, 2022</div>
+                    </div>
+
+                    <div class="container">
+                        <div class="title-detail">CONTACT</div>
+                        <div class="info">09123456789</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp">
+        <div class="title">RSVP</div>
+        <form>
+            <input type="text" class="form-element" placeholder="First Name" required>
+            <input type="text" class="form-element" placeholder="Last Name" required>
+            <input type="tel" class="form-element no-arrow" placeholder="Cellphone Number" required>
+            <button type="submit" class="form-element btn-submit">RESERVE NOW</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
